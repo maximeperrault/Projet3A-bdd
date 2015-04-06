@@ -1,0 +1,115 @@
+
+html{
+	background-image: url(img/Fond.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+body {
+	width: 1000px;
+	margin: auto;
+	color: #000;
+}
+
+#Logo{
+	width: 315px;
+	height: 133px;
+	margin-left: 0px;
+}
+
+section{
+	text-align: center;
+}
+
+#Requête{
+margin: 0 auto;
+margin-bottom: 30px;
+}
+
+#div1,
+#div2,
+#div3{
+	display: inline-block;
+}
+
+h1{
+	text-align: left;
+	font-size: 20px;
+	margin: 5px;
+	margin-left: 350px;
+}
+
+h2{
+	font-size: 14px;
+	margin: 3px;
+	font-family: "Arial";
+	font-weight: lighter;
+}
+
+
+#Nouvelle_Recherche,
+#Recherche
+{
+	cursor:  pointer;
+	border:none;
+    text-align:center;
+    color:#fff;
+    margin: 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 5px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    background: -webkit-linear-gradient(rgb(223, 47, 146), rgb(224, 45, 121)); 
+    background: -moz-linear-gradient(rgb(223, 47, 146), rgb(224, 45, 121));
+    background: -ms-linear-gradient(rgb(223, 47, 146), rgb(224, 45, 121));
+    background: -o-linear-gradient(rgb(223, 47, 146), rgb(224, 45, 121));
+}
+
+#Nouvelle_Recherche:hover,
+#Recherche:hover, 
+#Nouvelle_Recherche:focus,
+#Recherche:focus{
+	background: -webkit-linear-gradient(rgb(192, 44, 123), rgb(180, 35, 93)); 
+    background: -moz-linear-gradient(rgb(192, 44, 123), rgb(180, 35, 93));
+    background: -ms-linear-gradient(rgb(192, 44, 123), rgb(180, 35, 93));
+    background: -o-linear-gradient(rgb(192, 44, 123), rgb(180, 35, 93));
+
+    color: #fff;
+}
+
+#Wrap_Table{
+	/*border: thin solid #888;*/
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	-o-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+
+}
+
+#Resultat{
+	margin: 0px auto;
+	border: thin solid #000;
+	border-collapse: collapse;
+}
+
+#Resultat td, 
+#Resultat th {
+	border: thin solid #000;
+	width: 200px;
+	padding: 8px;
+}
+
+#Resultat th{
+	background-color: #6495ed;
+}
+
+
+
+
+

@@ -1,0 +1,36 @@
+CREATE TABLE "aeroport"(
+  "nom" VARCHAR(45),
+  "ville" VARCHAR(45),
+  "pays" VARCHAR(45),
+  "code_aeroport" VARCHAR(45),
+  "code_iata" VARCHAR(45) PRIMARY KEY NOT NULL,
+  "longitude" INTEGER,
+  "latitude" VARCHAR(45),
+  "fuseau" INTEGER,
+  "continent" VARCHAR(45)
+);
+CREATE TABLE "compagnie"(
+  "id_compagnie" VARCHAR(45) PRIMARY KEY NOT NULL,
+  "compagniecol" VARCHAR(45)
+);
+CREATE TABLE "vol"(
+  "aeroport_depart" VARCHAR(45) NOT NULL,
+  "aeroport_arrivee" VARCHAR(45),
+  "jours" VARCHAR(45) NOT NULL,
+  "heure_depart" VARCHAR(45),
+  "transporteur" VARCHAR(45),
+  "compagnie" VARCHAR(45) NOT NULL,
+  "num_vol" INTEGER NOT NULL,
+  "temps_vol" INTEGER,
+  "num_avion" INTEGER,
+  PRIMARY KEY("aeroport_depart","compagnie","num_vol","jours"),
+  CONSTRAINT "fk_vol_aeroport"
+    FOREIGN KEY("aeroport_depart")
+    REFERENCES "aeroport"("code_iata"),
+  CONSTRAINT "fk_vol_aeroport1"
+    FOREIGN KEY("aeroport_arrivee")
+    REFERENCES "aeroport"("code_iata"),
+  CONSTRAINT "fk_vol_compagnie1"
+    FOREIGN KEY("compagnie")
+    REFERENCES "compagnie"("id_compagnie")
+);

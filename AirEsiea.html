@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="stylesheet" href="AirEsiea.css" />
+		<title>AirEsiea.com</title>
+		<style type='text/css'>
+			td.headcol {width:auto;}
+ 		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/Logo.png" alt="Logo" id="Logo" >
+		</header>
+		
+	<section>
+	<form action = 'AirEsiea.php' method = "post">	
+		<table id="Requête">
+			<h1>Votre destination</h1>
+			<tr>
+				<td><label for="Départ"></label></td>
+				<td><input type="text" name="depart" placeholder="Départ"/></td>
+				<td><label for="Arrivée"></label></td>
+				<td><input type="text" name="arrivee" placeholder="Arrivée"/></td>
+			</tr>
+		</table>
+		
+		<h1>Votre date de départ</h1>
+		
+			<div id="div1">
+			<h2>Jour</h2>
+			<select name="jour" size="1" tabindex="1">
+				<option>Tous</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				<option>31</option>
+			</select>
+			</div>
+			
+			<div id="div2">
+			<h2>Mois</h2>
+			<select name="mois" size="1" tabindex="1">
+				<option>Tous</option>
+				<option>Janvier</option>
+				<option>Février</option>
+				<option>Mars</option>
+				<option>Avril</option>
+				<option>Mai</option>
+				<option>Juin</option>
+				<option>Juillet</option>
+				<option>Août</option>
+				<option>Septembre</option>
+				<option>Octobre</option>
+				<option>Novembre</option>
+				<option>Décembre</option>
+			</select>
+			</div>
+			
+			<div id="div3">
+			<h2>Année</h2>
+			<select name="annee" size="1" tabindex="1">
+				<option>Toutes</option>
+				<option>2000</option>
+				<option>2001</option>
+				<option>2002</option>
+				<option>2003</option>
+				<option>2004</option>
+				<option>2005</option>
+				<option>2006</option>
+				<option>2007</option>				
+				<option>2008</option>
+				<option>2009</option>
+				<option>2010</option>
+				<option>2011</option>
+				<option>2012</option>
+				<option>2013</option>
+				<option>2014</option>
+				<option>2015</option>
+				<option>2016</option>
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+				<option>2020</option>
+			</select>
+			</div>
+			
+			<div id="div4">
+			<input type="submit" name="Recherche" value="Recherche" id="Recherche"/>
+			<a href="AirEsiea.html"id="Nouvelle_Recherche">Nouvelle Recherche<a/>
+			</div>
+	</form>
+	
+	<div style="height: 200px; overflow: auto;" id="Wrap_Table">
+	<table id="Resultat">
+		<thead>
+       		<tr>
+           		<th>Vol</th>
+           		<th>Départ</th>
+          		<th>Arrivée</th>
+          		<th>Durée</th>
+          		<th>Compagnie Aérienne</th>
+       		</tr>
+   		</thead>
+
+   		<tfoot>
+   		</tfoot>
+   		
+   		<!--<tbody>
+       		<tr>
+           		<td>jklhlgfs</td>
+           		<td>kyqgdfvuliz</td>
+           		<td>qfsbgqd</td>
+           		<td>sdgth</td>
+           		<td>stgh</td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td>yrdsj</td>
+           		<td>syrj</td>
+           		<td>tfgjnhzrt</td>
+           		<td>srytj</td>
+           		<td>syrj</td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+		
+		<tr>
+			<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+       		<tr>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+           		<td></td>
+       		</tr>
+   		</tbody>-->
+   		
+   </table>
+   </div>
+	
+	</section>
+	
+	</body>
+	
+	
+	<footer>
+		
+	</footer>
+</html>
